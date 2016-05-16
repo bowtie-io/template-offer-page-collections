@@ -1,0 +1,88 @@
+<!-- Social links are populated by offers and fall back to your config.yml. Add any link you need. BowTie uses fonteawesome for icons -->
+
+<div class="social-media">
+  <h5 class="title">Connect</h5>
+  <div>
+    {% if page.company.facebook %}
+    <a target="_blank" href="https://facebook.com/{{ page.company.facebook }}">
+      <i class="fa fa-facebook fa-2x"></i>
+    </a>
+    {% elsif site.theme.contact.facebook %}
+    <a target="_blank" href="https://facebook.com/{{ site.theme.contact.facebook }}">
+      <i class="fa fa-facebook fa-2x"></i>
+    </a>
+    {% endif %}
+
+    {% if page.company.instagram %}
+    <a target="_blank" href="https://instagram.com/{{ page.company.instagram }}">
+      <i class="fa fa-instagram fa-2x"></i>
+    </a>
+    {% elsif site.theme.contact.instagram %}
+    <a target="_blank" href="https://instagram.com/{{ site.theme.contact.instagram }}">
+      <i class="fa fa-instagram fa-2x"></i>
+    </a>
+    {% endif %}
+
+    {% if page.company.flickr %}
+    <a target="_blank" href="https://flickr.com/{{ page.company.flickr }}">
+      <i class="fa fa-flickr fa-2x"></i>
+    </a>
+    {% elsif site.theme.contact.flickr %}
+    <a target="_blank" href="https://flickr.com/{{ site.theme.contact.flickr }}">
+      <i class="fa fa-flickr fa-2x"></i>
+    </a>
+    {% endif %}
+
+    {% if page.company.linkedin %}
+    <a target="_blank" href="https://www.linkedin.com/{{ page.company.linkedin }}">
+      <i class="fa fa-linkedin fa-2x"></i>
+    </a>
+    {% elsif site.theme.contact.linkedin %}
+    <a target="_blank" href="https://www.linkedin.com/{{ site.theme.contact.linkedin }}">
+      <i class="fa fa-linkedin fa-2x"></i>
+    </a>
+    {% endif %}
+
+    {% if page.company.youtube %}
+    <a target="_blank" href="https://www.youtube.com/{{ page.company.youtube }}">
+      <i class="fa fa-youtube fa-2x"></i>
+    </a>
+    {% elsif site.theme.contact.youtube %}
+    <a target="_blank" href="https://www.youtube.com/{{ site.theme.contact.youtube }}">
+      <i class="fa fa-youtube fa-2x"></i>
+    </a>
+    {% endif %}
+
+    {% if page.company.github %}
+    <a target="_blank" href="https://github.com/{{ page.company.github }}">
+      <i class="fa fa-github fa-2x"></i>
+    </a>
+    {% elsif site.theme.contact.github %}
+    <a target="_blank" href="https://github.com/{{ site.theme.contact.github }}">
+      <i class="fa fa-github fa-2x"></i>
+    </a>
+    {% endif %}
+
+    {% if page.company.twitter %}
+    <a target="_blank" href="https://twitter.com/{{ page.company.twitter }}">
+      <i class="fa fa-twitter fa-2x"></i>
+    </a>
+    {% elsif site.theme.contact.twitter %}
+    <a target="_blank" href="https://twitter.com/{{ site.theme.contact.twitter }}">
+      <i class="fa fa-twitter fa-2x"></i>
+    </a>
+    {% endif %}
+
+    {% if page.company.email %}
+    <a target="_blank" href="mailto:{{ page.company.email }}">
+      <i class="fa fa-envelope-o fa-2x"></i>
+    </a>
+    {% elsif site.email %}
+    <a target="_blank" href="mailto:{{ site.email }}">
+      <i class="fa fa-envelope-o fa-2x"></i>
+    </a>
+    {% endif %}
+
+
+  </div>
+</div>

@@ -1,0 +1,431 @@
+/*******************************************************/
+
+/* Add/remove custom styles to this theme file */
+
+/*******************************************************/
+
+/***** your custom styles ****/
+
+#redemption, #fine-print, #short-description, #offer-details {
+  margin:30px 0 0;
+  p {margin:10px 0 0;}
+}
+
+#product, #pricing-block {
+  display: block;
+}
+
+#content .section {
+padding: 15px 0;
+}
+
+#map-canvas {
+  width: 100%;
+  height: 250px !important;
+  font-size: .85em;
+}
+
+.checkout-button {
+    padding: 15px 30px;
+    font-size: 19px;
+    border-radius: 5px !important;
+    }
+
+#content .deal {
+  h1 {
+  text-shadow: none;
+  font-weight: 600;
+  font-size: 3em;
+  }
+  h4 {
+  font-size: .85em;
+  font-weight: normal;
+  margin: 2em 0px 0.5em;
+  color: #789;
+  text-transform: uppercase;
+  }
+  h3 {
+    color: #333;
+    font-weight: normal;
+  }
+  h2 {
+  font-size: .85em;
+  font-weight: normal;
+  margin: 0 0px 1em;
+  color: #789;
+  text-transform: normal;
+  }
+  .company-location {
+    position: relative;
+    float: left;
+    top: 0;
+    background: none !important;
+    z-index: 3;
+    padding: 0;
+    border-radius: 0;
+    color: #000;
+    width: auto;
+    padding-left:30px;
+    p {color:#000 !important;}
+    h4 {color:#789 !important;margin:1em 0px 0.5em,}
+    }
+    .countdown, .count-down-complete {
+      display: inline-block;
+      text-align: center;
+      width: 100%;
+      h4 {color: #999; text-align: center !important;}
+    }
+    .count-down {
+      margin: 0 0 1em 0;
+      clear: both;
+      width: calc(100%);
+      *zoom: 1;
+      .count,
+      .count-wrap,
+      .count-spacer {
+        display: inline-block;
+        text-align: center;
+        color:#333;
+        font-weight:normal;
+        letter-spacing:.05em;
+      }
+      .count-wrap {
+        width: 50px;
+        height: 50px;
+        background: none;
+        line-height: 1;
+        border: none;
+      }
+      .count-spacer {
+        padding: 0 10px;
+        font-size: 200%;
+        height: 60px;
+        line-height: 1;
+      }
+      .digits {
+        display: block;
+        font-size: 120%;
+        margin: 5px 0;
+      }
+      h2 {padding:0 15px;
+      }
+    }
+
+    .count-down:before,
+    .count-down:after {
+      display: table;
+      content: "";
+      line-height: 0;
+    }
+    .count-down:after {
+      clear: both;
+    }
+
+  }
+
+  .related {
+    margin: 30px 0;
+    padding-top: 30px;
+    border-top: 1px solid #eee;
+  .row {
+    margin-left: -10px;
+    margin-right: -20px;
+    .col-sm-4 {padding: 0 20px;}
+  }
+  .product {
+    display: block;
+    min-height:300px;
+    margin-bottom:40px;
+    .media {
+      img {border: 1px solid #eee;}
+    }
+    h3.title {padding-top: 15px; font-size:1.25em !important;}
+    }
+    .row.discounts {margin-top:-10px;}
+  }
+
+
+/***** fonts (use @import... to add custom webfonts) ****/
+
+@import url(https://fonts.googleapis.com/css?family=Ubuntu:400,300,300italic|Lato:400,100,300,300italic,700,400italic);
+
+$primary-font: null; /** body, p **/
+$primary-font-weight: null;
+$primary-font-color: null;
+
+$heading-font: null; /** h1, h2, h3, h4, h5 **/
+$heading-font-weight: null;
+$heading-font-color: null;
+
+$subheading-font: null; /** h3, h4, h5 **/ //should be subheading-heading-font
+$subheading-font-weight: null;
+$subheading-font-color: null;
+
+$link-color: null;
+$link-weight: null;
+$link-hover-color: null;
+$link-hover-weight: null;
+
+$nav: null;
+$nav-hover: null;
+$nav-font-color: null;
+$nav-hover-font-color: null;
+
+$footer: null;
+$footer-font-color: null;
+$footer-link-color: null;
+$footer-link-hover-color: null;
+$subfooter-font-color: null;
+$subfooter-link-color: null;
+$footer-icon-color: null;
+$footer-border: none;
+
+/***** section settings and colors ****/
+
+$section-padding: null;
+$content-container-bg: null;
+
+$section-font-color: null;
+$section-heading-font-color: null;
+$section-subheading-font-color: null;
+$section-link-color: null;
+$section-link-hover-color: null;
+$section-bg: null;
+
+$section-bgclear-font-color: #fff;
+$section-bgclear-heading-font-color: null;
+$section-bgclear-subheading-font-color: null;
+$section-bgclear-link-color: null;
+$section-bgclear-link-hover-color: null;
+
+$section-alt-font-color: null;
+$section-alt-subheading-font-color: null;
+$section-alt-heading-font-color: null;
+$section-alt-link-color: null;
+$section-alt-link-hover-color: null;
+$section-alt-bg: null;
+
+$section-dark-font-color: null;
+$section-dark-heading-font-color: null;
+$section-dark-subheading-font-color: null;
+$section-dark-link-color: null;
+$section-dark-link-hover-color: null;
+$section-dark-bg: null;
+
+/***** buttons ****/
+
+$default: null;
+$default-hover: null;
+$info: null;
+$info-hover: null;
+$success: null;
+$success-hover: null;
+$warning: null;
+$warning-hover: null;
+$radius: null;
+
+/***** form styles ****/
+$form-headline-color: null;
+$form-background-color: null;
+$form-border: null;
+$form-box-shadow: null;
+
+$mediatint-color: #65c4dc;
+$bgoverlayDark: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.9));
+$bgoverlayLight: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.9));
+
+/***** background images ****/
+
+#team {
+ background-image:url(/img/backgrounds/bg2.jpg) !important;
+}
+
+
+/***** theme variables below this line ****/
+
+a {
+  font-weight: $link-weight !important;
+  color: $link-color !important;
+}
+
+a:hover, a:focus {
+  font-weight: $link-hover-weight !important;
+  color: $link-hover-color !important;
+}
+
+h1,h2,h3,h4,h5 {
+  font-weight: $heading-font-weight;
+  font-family: $heading-font, "Helvetica", sans-serif;
+  color: $heading-font-color !important;
+}
+
+h3, h4 {
+  align-content: center;
+  text-transform: none;
+  font-family: $subheading-font !important;
+  color: $subheading-font-color !important;
+}
+
+body, p {
+font-family: $primary-font, "Helvetica", sans-serif !important;
+font-weight:$primary-font-weight !important;
+color:$primary-font-color !important;
+}
+
+/// new section overrides
+
+section {
+  background-color: $section-bg;
+  padding: $section-padding !important;
+  body, p, li, ul, h1, h2, h3, h4, h5 { color:$section-font-color !important;}
+  h1, h2 { color:$section-heading-font-color !important;}
+  h3, h4, h5 { color:$section-subheading-font-color !important;}
+}
+section.alt {
+  background-color: $section-alt-bg;
+  body, p, li, ul, h1, h2, h3, h4, h5 { color:$section-alt-font-color !important;}
+  h1, h2 { color:$section-alt-heading-font-color !important;}
+  h3, h4, h5 { color:$section-alt-subheading-font-color !important;}
+}
+
+section.dark {
+  background-color: $section-dark-bg;
+  body, p, li, ul, h1, h2, h3, h4, h5 { color:$section-dark-font-color !important;}
+  h1, h2 { color:$section-dark-heading-font-color !important;}
+  h3, h4, h5 { color:$section-dark-subheading-font-color !important;}
+}
+
+section.bgclear {
+  background-color: transparent !important;
+  body, p, li, ul, h1, h2, h3, h4, h5 { color:$section-bgclear-font-color !important;}
+  h1, h2 { color:$section-bgclear-heading-font-color !important;}
+  h3, h4, h5 { color:$section-bgclear-subheading-font-color !important;}
+}
+
+.bgclear {background-color: transparent !important;}
+
+
+#footer {
+  background-color:$footer;
+  color:$footer-font-color;
+  border-top: $footer-border !important;
+  margin-top:-1px;
+  a, a:visited, a:hover, a:active {
+    color:$footer-link-color !important;
+    }
+  a:hover, a:active {
+    color:$footer-link-hover-color !important;
+    }
+  i {
+    color:$footer-icon-color;}
+}
+
+.subfooter {
+  color:$subfooter-font-color !important;
+  a, a:visited, a:hover, a:active {
+    color:$subfooter-link-color !important;
+    }
+  }
+
+#nav.navbar {
+  background-color:$nav;
+}
+
+.nav > li > a, .nav > li, .navbar-toggle.btn-transparent {
+color:$nav-font-color !important;
+}
+
+.nav > li > a:hover, .nav > li > a:focus, .navbar-toggle.btn-transparent:hover, .navbar-toggle.btn-transparent:focus {
+background-color:$nav-hover;
+color:$nav-hover-font-color !important;
+}
+
+.btn-default {
+  background-color:$default;
+  border-color:$default;
+}
+
+.btn-default:hover,.btn-default:active,.btn-default:focus,  {
+  background-color:$default-hover;
+  border-color:$default-hover;
+}
+
+.btn-info {
+  background-color:$info;
+  border-color:$info;
+}
+
+.btn-info:hover,.btn-info:active,.btn-info:focus  {
+  background-color:$info-hover;
+  border-color:$info-hover;
+}
+
+.btn-warning {
+  background-color:$warning;
+  border: 2px solid $warning-hover;
+}
+
+.btn-warning:hover,.btn-warning:active,.btn-warning:focus  {
+  background-color:$warning-hover;
+  border-color:$warning-hover;
+}
+
+.btn-success {
+  background-color:$success;
+  border-color:$success;
+}
+
+.btn-success:hover,.btn-success:active,.btn-success:focus,.btn-success:visited  {
+  background-color:$success-hover;
+  border-color:$success-hover;
+}
+
+.btn, .btn-sm, .btn-lg, .btn-xs {
+  border-radius:$radius !important;
+}
+
+
+#content{
+  .post-header {margin-top:30px;}
+  #hero {
+  .action.form {
+    h2 {
+      color: $form-headline-color !important;
+      }
+    .email-form {
+      background: $form-background-color !important;
+      border: $form-border;
+      box-shadow: $form-box-shadow  !important;
+      }
+    }
+  }
+}
+
+.media-wrap {
+  .media-tint, .video-placeholder {
+    background: $mediatint-color;
+    }
+  .media.bgoverlayLight:after {
+      background: $bgoverlayLight;
+    }
+    .media.bgoverlayDark:after {
+      background: $bgoverlayDark;
+    }
+  }
+
+
+  .content-container {
+    section:nth-child(1) {
+      padding: $section-padding;
+      section:first-of-type {
+        margin: $section-padding;
+      }
+      section:nth-child(2) {
+        margin-top:-60px;
+        margin-bottom: 60px;
+      }
+    }
+    section > section:last-of-type {
+      margin-bottom:-60px;
+    }
+  }

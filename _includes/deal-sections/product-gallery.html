@@ -1,0 +1,61 @@
+<link rel="stylesheet" type="text/css" href="/css/components/product-gallery.css"/>
+
+<div id="product">
+<div class="carousel slide product-slide" id="product-gallery">
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner cont-slider">
+
+    {% if page.deal.gallery.img1_path %}
+    <div class="item active">
+      <img alt="" title="" src="{{ page.deal.gallery.img1_path }}">
+    </div>
+    {% endif %}
+    {% if page.deal.gallery.img2_path %}
+    <div class="item">
+      <img alt="" title="" src="{{ page.deal.gallery.img2_path }}">
+    </div>
+    {% endif %}
+    {% if page.deal.gallery.img3_path %}
+    <div class="item">
+      <img alt="" title="" src="{{ page.deal.gallery.img3_path }}">
+    </div>
+    {% endif %}
+    {% if page.deal.gallery.img4_path %}
+    <div class="item">
+      <img alt="" title="" src="{{ page.deal.gallery.img4_path }}">
+    </div>
+    {% endif %}
+  </div>
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    {% if page.deal.gallery.img1_path %}
+    <li class="active" data-slide-to="0" data-target="#product-gallery">
+      <img alt="" src="{{ page.deal.gallery.img1_path }}">
+    </li>
+    {% endif %}
+    {% if page.deal.gallery.img2_path %}
+    <li class="" data-slide-to="1" data-target="#product-gallery">
+      <img alt="" src="{{ page.deal.gallery.img2_path }}">
+    </li>
+    {% endif %}
+    {% if page.deal.gallery.img3_path %}
+    <li class="" data-slide-to="2" data-target="#product-gallery">
+      <img alt="" src="{{ page.deal.gallery.img3_path }}">
+    </li>
+    {% endif %}
+    {% if page.deal.gallery.img4_path %}
+    <li class="" data-slide-to="3" data-target="#product-gallery">
+      <img alt="" src="{{ page.deal.gallery.img4_path }}">
+    </li>
+    {% endif %}
+  </ol>
+</div>
+{% include deal-sections/short-description.html %}
+
+</div>
+<script type="text/javascript">
+$('.carousel').carousel({
+  interval: false
+});
+</script>

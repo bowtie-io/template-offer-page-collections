@@ -1,0 +1,34 @@
+<div class="related">
+  <div class="row">
+    {% assign offers = site.offers %}
+    {% for offer in offers %}
+    {% if offer.name == page.name %}
+    {% else %}
+    {% cycle 'add row' : '<span class="row"> <div class="center-team">', nil, nil %}
+    <div class="col-sm-4">
+      <a class="product" href="{{ offer.permalink }}">
+        <div class="media">
+          <img src="{{ offer.deal.img_path }}" />
+        </div>
+        <h3 class="title">{{ offer.title }}</h3>
+        <div class='row discounts'>
+          <div class='col-xs-4'>
+            <h4 class='unit'>{{ offer.product.unit }}</h4>
+            <h3 class="dollar">$ {{ offer.product.price | divided_by: 100 }}</h3>
+          </div>
+          <div class='col-xs-4'>
+            <h4 class="msrp">Value</h4>
+            <h3 class="msrp">${{ offer.product.msrp }}</h3>
+          </div>
+          <div class='col-xs-4'>
+            <h4 class="discount">Discount</h4>
+            <h3 class="discount">{{ offer.product.percent_off }}</h3>
+          </div>
+        </div>
+      </a>
+    </div>
+    {% cycle 'end row' : nil, nil, '</div> </span>' %}
+    {% endif %}
+  {%endfor%}
+  </div>
+</div>

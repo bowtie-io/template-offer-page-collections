@@ -1,0 +1,40 @@
+---
+# this front matter renders the file as css
+---
+
+/****************** Product Gallery Carousel ******************/
+
+/* Indicators list style */
+.product-slide .carousel-indicators {
+    margin-left: 0px;
+    width: 100%;
+    min-height: 60px;
+    height: auto;
+    position: relative;
+    left: 0;
+    bottom: -5px;
+    display: inline-block;
+    clear: left;
+}
+.product-slide .carousel-indicators li {
+    border: medium none;
+    border-radius: 0;
+    float: left;
+    height: auto;
+    margin-bottom: 5px;
+    margin-left: 0;
+    margin-right: 2px !important;
+    margin-top: 0;
+    width: calc(25% - 2px);
+}
+.product-slide .carousel-indicators img {
+    border: 2px solid #FFFFFF;
+    float: left;
+    left: 0;
+    // height: 54px;
+    // width: 100px;
+}
+.product-slide .carousel-indicators .active img {
+    border: 2px solid #333;
+    opacity: 0.6;
+}

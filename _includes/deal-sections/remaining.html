@@ -1,0 +1,18 @@
+<script type="text/javascript" src="/vendor/jquery.countdown/dist/jquery.countdown.min.js"></script>
+<script type="text/javascript" src="/js/countdown.js"></script>
+
+<div class="countdown remaining">
+  <!--Use data-countdown-date="2016/05/01" below to state the count down to date, use data-countdown-hide-oncomplete="true" to hide the count digitals on complete-->
+  <h4 class="hideexpired"><i class="fa fa-clock-o"></i>Limited time remaining!</h4>
+  <div class="count-down pull-left" id="count-down" data-countdown="{{ page.deal.expiration_on }}" data-countdown-hide-oncomplete="true">
+    <span class="count hideexpired"><span class="count-wrap"><span class="digits" id="days"></span></span> </span>
+    <span class="count hideexpired"><span class="count-wrap"><span class="digits" id="hours"></span></span> </span>
+    <span class="count hideexpired"><span class="count-wrap"><span class="digits" id="minutes"></span></span> </span>
+    <span class="count hideexpired"><span class="count-wrap"><span class="digits" id="seconds"></span></span></span>
+
+    <!--Optional count down complete message to display, remove to hide whole countdown block-->
+    <div class="count-down-complete">
+      <h4>{{ page.deal.expiration_msg }}</h4>
+    </div>
+  </div>
+</div>

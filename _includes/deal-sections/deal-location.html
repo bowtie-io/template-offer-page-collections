@@ -1,0 +1,56 @@
+<script type="text/javascript" src="/js/map.js"></script>
+<link rel="stylesheet" type="text/css" href="/css/components/map.css"/>
+
+<div class="clearfix">
+  <h3>Where To Redeem</h3>
+
+  {% if page.company.latlng %}
+  <div class="row col-sm-6 deal-map">
+    <div id="map" data-coords="{{ page.company.latlng }}">
+      <a name="#map"></a>
+    <div id="map-canvas"></div>
+    </div>
+  </div>
+  {% elsif site.theme.contact.latlng %}
+  <div class="row col-sm-6 deal-map">
+    <div id="map" data-coords="{{ site.theme.contact.latlng }}">
+      <a name="#map"></a>
+    <div id="map-canvas"></div>
+    </div>
+  </div>
+  {% endif %}
+
+  {% if page.company.address %}
+  <div class="col-sm-4 col-xs-9">
+    <div class="company-location">
+      <h4>Location</h4>
+      <p>{{ page.company.name }}</p>
+      <p>{{ page.company.address }}, {{ page.company.city }}, {{ page.company.state }} {{ page.company.zip }}, {{ page.company.country }}</p>
+      <p>{{ page.company.phone }}</p>
+      <h4>Company Website</h4>
+      <p><a href="{{ page.company.website }}" target="_blank">{{ page.company.website }}</a></p>
+    </div>
+  </div>
+  {% if page.company.image_path %}
+  <div class="col-sm-2 col-xs-3">
+    <img src="{{page.company.image_path}}" class="deal-logo">
+  </div>
+  {% endif %}
+
+  {% elsif site.theme.contact.address %}
+  <div class="col-sm-4 col-xs-9">
+    <div class="company-location">
+      <h4>Location</h4>
+      <p>{{ site.theme.contact.name }}</p>
+      <p>{{ site.theme.contact.address }}, {{ site.theme.contact.city }}, {{ site.theme.contact.state }} {{site.theme.contact.zip }}, {{ site.theme.contact.country }}</p>
+      <p>{{ site.theme.contact.phone }}</p>
+      <h4>Company Website</h4>
+      <p><a href="{{ site.theme.contact.website }}" target="_blank">{{ site.theme.contact.website }}</a></p>
+    </div>
+  </div>
+  <div class="col-sm-2 col-xs-3">
+    <img src="/img/logo-badge.png" class="deal-logo">
+  </div>
+  {% endif %}
+
+</div>

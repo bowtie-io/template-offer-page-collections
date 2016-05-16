@@ -1,0 +1,58 @@
+---
+layout: page
+permalink: /voucher/thankyou/
+offer: defaultoffer
+title: Receipt
+subtitle: Follow these instructions to redeem your offer.
+masthead-img: false
+masthead-img-pat: false
+author: john
+categories:
+- Special Offer
+- BowTie
+- Example Site
+elsewhere:
+elsewhere-url:
+comments: false
+exclude_from_nav: true
+share: false
+---
+
+
+<p>Thanks for purchasing <span class="offer_title"></span>. Your receipt is below:</p>
+
+<div id="product">
+  <h4>Purchase Details:</h4>
+  <p><strong class="offer_title">{{ offer.name }}</strong></p>
+  <p class="offer_description" name="profile[description]"></p>
+  <p>Your Price:
+    <span class="dollar">$</span><span class="offer_amount" name="profile[amount]"></span>
+   (Savings: <span class="offer_savings" name="profile[savings]"></span>)</span>
+</div>
+
+<div id="redemption">
+  <h4>How To Redeem</h4>
+  <p class="offer_redemption"></p>
+  <p class="offer_fineprint small"></p>
+</div>
+
+<br />
+
+
+<script type="text/javascript">
+$(window).bind("load", function(){
+  bowtie.user.profile(function(profile){
+    $(".offer_title").text(profile.offerTitle);
+    $(".offer_amount").text(profile.offerAmount);
+    $(".offer_savings").text(profile.offerSavings);
+    $(".offer_description").text(profile.offerDescription);
+    $(".offer_redemption").text(profile.offerRedemption);
+    $(".offer_fineprint").text(profile.offerFineprint);
+  });
+});
+window.onload = function updateProfile(){
+  bowtie.user.profile({
+  saleCompleted: true
+  });
+}
+</script>
