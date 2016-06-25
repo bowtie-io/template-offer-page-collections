@@ -3,23 +3,23 @@ location:
 head:
   title:
   subtitle:
+  img_path:
 style:
-  id:
-  class:
-  font_color:
+  id: null
+  class: null
   media:
     img:
       url_path:
       pattern: false
       parallax: false
-      overlay:
+      overlay: null
       blur: false
     video:
       url_path: null
       type: null  
       posterurl_path: null  
-  tint_color: 'rgba(0,0,0,0.0)'
-
+  sectioncolor:
+  tint_color: 'rgba(0,0,0,0.0)'  
 cta:
   headline:
   btnText:
@@ -27,3 +27,5 @@ cta:
   btnLink:
   subtext:
 ---
+
+Use our standard theme options, roll your own, or remove our theme.scss file to roll back to vanilla bootstrap.
